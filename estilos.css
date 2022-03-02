@@ -1,0 +1,336 @@
+/* ----- TIPOGRAFÍA ------  */
+
+@font-face {
+    font-family: "Nexa";
+    src: url(fonts/nexabold.woff2),
+        url(fonts/nexabold.woff);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nexa";
+    src: url(fonts/nexalight.woff2),
+        url(fonts/nexalight.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img, svg {
+	max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.6em;
+    font-weight: 800;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+h3 {
+    font-size: 1.9em;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+body {
+    font-family: "Nexa";
+    font-size: 16px;
+    background: #f8f5f2;
+    color: #61583c;	
+    overflow-x: hidden;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    background-color: #61583c;	
+    color: #f8f5f2;
+}
+
+nav img {
+    width: 35%;
+}
+
+nav .contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 0;
+    align-items: center;
+}
+
+nav a {
+    color: #f8f5f2; 
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    color: #E1D7CD;
+}
+
+header {
+    background: url(img/mesa.png);
+    background-size: cover;
+    height: calc(100vh - 71px);
+    background-position: center;
+}
+
+header .contenedor {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .texto{
+    width: 50%;
+}
+
+header .botellas{
+    width: 45%;
+}
+
+.limon, .frutos, .naranja, .pepino {
+    width: 24%;
+}
+
+
+/* ------ ANIMACIONES ------ */ 
+
+.limon {
+    transform: translate(645px, 0px);
+    animation: animacionLimon 1s ease-in-out 1s normal forwards;
+}
+
+@keyframes animacionLimon {
+
+    0% {
+        transform: translate(645px, 0px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+.frutos {
+    transform: translate(460px, 0px);
+    animation: animacionFrutos 1s ease-in-out 1.5s normal forwards;
+}
+
+@keyframes animacionFrutos {
+
+    0% {
+        transform: translate(460px, 0px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+.naranja {
+    transform: translate(330px, 0px);
+    animation: animacionNaranja 1s ease-in-out 1.8s normal forwards;
+}
+
+@keyframes animacionNaranja {
+
+    0% {
+        transform: translate(330px, 0px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+.pepino {
+    transform: translate(200px, 0px);
+    animation: animacionPepino 1s ease-in-out 2s normal forwards;
+}
+
+@keyframes animacionPepino {
+
+    0% {
+        transform: translate(200px, 0px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+/* ------  ------ */ 
+
+.sprite {
+    width: 275px;
+    height: 450px;
+    display: inline-block;
+    background-image: url(assets/hecho.png);
+    background-position-x: 0;
+    background-position-y: 0;
+    animation: animaBotella 3s steps(12) 3s infinite alternate;
+}
+
+@keyframes animaBotella {
+    0% {
+        background-position-x: 0px;
+        background-position-y: 0px;
+    }
+    25%{
+        background-position-x: -3300px;
+        background-position-y: 0px;
+    }
+    25.1%{
+        background-position-x: 0px;
+        background-position-y: -450px;
+    }
+    50%{
+        background-position-x: -3300px;
+        background-position-y: -450px;
+    }
+    50.1%{
+        background-position-x: 0px;
+        background-position-y: -900px;
+    }
+    75%{
+        background-position-x: -3300px;
+        background-position-y: -900px;
+    }
+    75.1%{
+        background-position-x: 0px;
+        background-position-y: -1350px;
+    }
+    100%{
+        background-position-x: -3300px;
+        background-position-y: -1350px;
+    }
+}
+
+#informacion .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+#informacion .contenedor div:first-child {
+    width: 65%;
+}
+figure {
+    width: 20%;
+}
+
+#envases .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#envases .contenedor div {
+    width: 80%;
+    padding-top: 20px;
+}
+
+#productos img {
+    width: 30%;
+}
+
+#productos .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article {
+    text-align: center;
+    width: 20%;
+    border: 2px solid #61583c;
+    border-radius: 3px;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+article:hover {
+    transform: scale(1.04);
+}
+
+article a {
+    background: #61583c;
+    color: #f8f5f2;
+    font-weight: bold;
+    padding: 0.5em;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 3px;
+    transition: ease 0.5s;
+}
+
+article a:hover {
+    transform: translate(0px, -5px);
+}
+
+#beneficios .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+#beneficios .contenedor h2 {
+    text-align: left;
+}
+
+#beneficios li {
+    margin: 8px 0;
+    list-style-position: inside;
+}
+
+footer {
+    background: #61583c;
+    padding: 1em;
+}
+
+footer .fab {
+    font-size: 2em;
+    margin-right: 15px;
+    color: #F8FAFB;
+    transition: ease 0.5s;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer a .fab:hover {
+    color: #E1D7CD;
+}
+
