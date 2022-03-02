@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 328 300" style="enable-background:new 0 0 328 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#60583B;}
+	.st1{fill:#E8DCD4;}
+	.st2{fill:#C39F47;}
+	.st3{fill:#CEB179;}
+	#tapa {
+		transform: translate(0,0);
+		animation: animacionTapa 3s ease-in-out 0s normal forwards;
+	}
+
+	@keyframes animacionTapa {
+
+    0% {
+        transform: translate(0,0)
+    }
+	50%{
+		transform: translate(110px ,0)
+	}
+	99{
+		opacity: 1;
+	}
+    100% {
+		opacity: 0;
+        transform: rotate(30deg) translate(100px ,0);
+    }
+}
+
+#chico {
+	transform: translate(0,0);
+	animation: animacionChico 2s ease-in-out 2s normal forwards;
+}
+
+@keyframes animacionChico {
+
+    0% {
+        transform: translate(0,0)
+    }
+	100%{
+		transform: translate(-85px ,265px)
+	}
+}
+
+#mediano {
+	transform: translate(0,0);
+	animation: animacionMediano 2s ease-in-out 2.3s normal forwards;
+}
+
+@keyframes animacionMediano {
+
+    0% {
+        transform: translate(0,0)
+    }
+	100%{
+		transform: translate(50px ,290px)
+	}
+}
+
+#grande {
+	transform: translate(0,0);
+	animation: animacionGrande 1.5s ease-in 1.5s normal forwards;
+}
+
+@keyframes animacionGrande {
+
+    0% {
+        transform: translate(0,0)
+    }
+	100%{
+		transform: translate(20px ,250px)
+	}
+}
+</style>
+<g id="tapa">
+	<g>
+		<g>
+			<path class="st0" d="M178.4,57.3l-106.7,0c-3.7,0-6.6-3-6.6-6.6l0-2.4c0-3.7,3-6.6,6.6-6.6l106.7,0c3.7,0,6.6,3,6.6,6.6v2.4
+				C185,54.3,182,57.3,178.4,57.3z"/>
+		</g>
+	</g>
+</g>
+<g id="frasco">
+	<path class="st1" d="M178.1,57.3H71.9c-21.6,19.8-21.6,48.1-21.6,48.1v19.5v8.6v3.3v34.6v88.1c0,5.3,4.7,9.6,10.5,9.6h128.2
+		c5.8,0,10.5-4.3,10.5-9.6v-87v-37.7V130v-6.3v-18.2C199.6,105.4,200.7,73,178.1,57.3z"/>
+</g>
+<g id="liquido">
+	<path class="st2" d="M50.3,266.8c0,1.8,4.7,3.2,10.5,3.2h128.2c5.8,0,10.5-1.5,10.5-3.2v-29.4v-12.1H50.3V237V266.8z"/>
+</g>
+<g id="mediano">
+	<path class="st3" d="M123.7-61.2c-10.8-1.4-18.6-6.6-17.2-17.4s9.3-20.9,20.1-19.4s18.4,11.3,17,22.2
+		C142.2-65,134.5-59.8,123.7-61.2z"/>
+</g>
+<g id="grande">
+	<path class="st3" d="M127-30.2c0,13.1-4.9,23.3-18.1,23.3s-26.3-7.8-26.3-20.9s10.6-23.8,23.8-23.8S127-43.3,127-30.2z"/>
+</g>
+<g id="chico">
+	<path class="st3" d="M143.8-30.5c-1.8-9.1,0.1-16.8,9.2-18.6c9.1-1.8,19.3,1.7,21.1,10.8s-4,17.9-13.1,19.8
+		C152-16.8,145.7-21.5,143.8-30.5z"/>
+</g>
+</svg>
